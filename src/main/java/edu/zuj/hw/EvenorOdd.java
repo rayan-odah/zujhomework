@@ -1,0 +1,33 @@
+package edu.zuj.hw;
+
+import java.util.Scanner;
+
+public class EvenorOdd {
+    public static int readnumber(String message){
+      
+        Scanner input=new Scanner(System.in);
+        int number;
+
+        System.out.println(message);
+        number =input.nextInt();
+        return number;
+    }
+   public static boolean evenorOdd (int number){
+   
+   
+   
+        return number%2==0 ;
+   
+   
+   
+   }
+    public static void main(String args[]) {
+
+        int number=readnumber("enter number");
+        
+      if(evenorOdd(number))
+          System.out.println("its even");
+      else 
+          System.out.println("its odd ");
+ }
+}
