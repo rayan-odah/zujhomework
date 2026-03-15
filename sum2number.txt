@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Main {
+ public static int readnumber(String message){
+      
+       
+        Scanner input=new Scanner(System.in);
+        int number;
+
+        System.out.println(message);
+        number =input.nextInt();
+        return number;
+    }
+
+    public static int sum(int n1,int n2){
+
+        return n1+n2; 
+
+
+    }
+ public static void main(String args[]) {
+
+        int num1=readnumber("enter number 1 ");
+        int num2=readnumber("enter number 2 ");
+
+        System.out.println("the sum is = "+sum(num1,num2));
+
+    }
+}
